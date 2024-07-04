@@ -35,5 +35,5 @@ app.use("/api/order", orderRoute);
 app.use("/api/checkout", stripeRoute);
 
 app.listen(process.env.PORT || 5000, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${process.env.PORT}`)
 });
